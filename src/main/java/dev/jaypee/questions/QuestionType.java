@@ -1,0 +1,8 @@
+package dev.jaypee.questions;
+
+public enum QuestionType {
+  IDENTIFICATION,
+  ENUMERATION,
+  CASE_SENSITIVE_ENUMERATION,
+  CASE_SENSITIVE_IDENTIFICATION
+}
