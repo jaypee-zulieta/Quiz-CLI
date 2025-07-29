@@ -15,7 +15,7 @@ public class EnumerationQuestion extends Question {
   }
 
   protected List<String> processAnswers(List<String> answers) {
-    return this.getAnswers().stream().map(s -> s.toLowerCase()).toList();
+    return this.getAnswers().stream().map(String::toLowerCase).toList();
   }
 
   protected List<String> processUserAnswers(String answer) {

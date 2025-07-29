@@ -12,7 +12,7 @@ public class CaseSensitiveOrderedEnumerationQuestion extends OrderedEnumerationQ
     @Override
     protected List<String> processUserAnswers(String answer) {
         List<String> rawUserAnswers = Arrays.asList(answer.split(","));
-        return rawUserAnswers.stream().map(s -> s.trim()).toList();
+        return rawUserAnswers.stream().map(String::trim).toList();
     }
 
     @Override

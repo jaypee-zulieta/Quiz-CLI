@@ -12,7 +12,7 @@ public class CaseSensitiveEnumerationQuestion extends EnumerationQuestion {
   @Override
   protected List<String> processUserAnswers(String answer) {
     List<String> rawUserAnswer = Arrays.asList(answer.split(","));
-    return rawUserAnswer.stream().map(s -> s.trim()).toList();
+    return rawUserAnswer.stream().map(String::trim).toList();
   }
 
   @Override
